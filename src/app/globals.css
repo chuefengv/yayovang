@@ -134,9 +134,11 @@ a {
   font-size: 2em;
   font-style: italic;
   margin: 20px 0 20px 0;
+  border: solid red 1px;
+  width: 90%;
 }
 .footer .under-construciton p {
-  border-bottom: solid white 1px;
+  text-decoration: underline;
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
