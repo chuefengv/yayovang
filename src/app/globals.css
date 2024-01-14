@@ -119,7 +119,6 @@ a {
   width: 80vw;
   max-width: 900px;
   background-color: black;
-  border: solid white 1px;
   -o-object-fit: fill;
      object-fit: fill;
 }

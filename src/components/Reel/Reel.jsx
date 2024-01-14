@@ -16,7 +16,7 @@ export default function Reel() {
           height='100%'
           controls={true}
           url={URL}
-          light={'https://yayovangprojects.s3.amazonaws.com/img/reel-thumb.jpeg'}
+          light={'https://yayovangprojects.s3.amazonaws.com/img/thumb-reel.jpeg'}
         />
       </div>
     </div>
