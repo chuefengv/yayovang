@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
 html,
 body,
 div,
@@ -67,18 +69,26 @@ td {
   vertical-align: baseline;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Add your custom styles below this line */
 .layout {
+  font-family: "Lato", sans-serif;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   max-width: 1300px;
   height: 100vh;
   margin: 0 auto;
-  border: solid red 1px;
+  color: rgb(255, 243, 243);
+  background-color: black;
 }
 
 .header {
   display: flex;
   justify-content: center;
-  border: solid blue 1px;
 }
 .header .header-wrapper {
   display: grid;
@@ -86,19 +96,19 @@ td {
   text-align: center;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 30px 0 30px 0;
+  margin: 30px 0 20px 0;
 }
 .header .header-wrapper h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   width: -moz-fit-content;
   width: fit-content;
 }
 .header .header-wrapper h3 {
+  font-size: 1.5em;
   margin: 10px 0 10px 0;
 }
 
 .reel {
-  border: solid red 1px;
   display: grid;
   justify-content: center;
   align-content: center;
@@ -109,8 +119,42 @@ td {
   width: 80vw;
   max-width: 900px;
   background-color: black;
+  border: solid white 1px;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .footer {
-  border: solid green 1px;
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  padding: 30px 0 30px 0;
+}
+.footer .under-construciton {
+  font-size: 2em;
+  font-style: italic;
+  margin: 20px 0 20px 0;
+}
+.footer .under-construciton p {
+  border-bottom: solid white 1px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+.footer .footer-text {
+  font-size: 1.5em;
+  margin: 20px 0 20px 0;
+}
+.footer .footer-icons .icons {
+  font-size: 2em;
+  margin: 0 10px 0 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .footer .under-construciton {
+    font-size: 1.5em;
+  }
+  .footer .footer-text {
+    font-size: 1em;
+  }
 }/*# sourceMappingURL=globals.css.map */
