@@ -79,4 +79,28 @@ a {
   font-family: "Lato", sans-serif;
   color: rgb(255, 243, 243);
   background-color: black;
+}
+
+.header {
+  border: solid red 1px;
+}
+
+.reel {
+  border: solid blue 1px;
+}
+.reel .genre-tabs {
+  display: flex;
+  justify-content: space-around;
+}
+.reel .project-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.reel .project-wrapper .project {
+  border: solid yellow 1px;
+  width: 200px;
+}
+
+.footer {
+  border: solid green 1px;
 }/*# sourceMappingURL=globals.css.map */
