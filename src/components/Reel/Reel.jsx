@@ -9,16 +9,7 @@ export default function Reel() {
 
   return (
     <div className='reel'>
-      <div className='reel-wrapper'>
-        <ReactPlayer
-          className='react-player'
-          width='100%'
-          height='100%'
-          controls={true}
-          url={URL}
-          light={'https://yayovangprojects.s3.amazonaws.com/img/thumb-reel.jpeg'}
-        />
-      </div>
+      Reel
     </div>
   );
 }
