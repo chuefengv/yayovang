@@ -92,6 +92,9 @@ a {
   display: flex;
   justify-content: space-around;
 }
+.reel .genre-tabs :hover {
+  cursor: pointer;
+}
 .reel .project-wrapper {
   display: flex;
   flex-wrap: wrap;

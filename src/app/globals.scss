@@ -94,6 +94,9 @@ a{
     .genre-tabs{
         display: flex;
         justify-content: space-around;
+        :hover{
+            cursor: pointer;
+        }
     }
     .project-wrapper{
         display: flex;
