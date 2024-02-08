@@ -5,9 +5,12 @@ import { projectlist } from '@/app/projectlist';
 
 export default function Reel() {
 
-  const [genre, setGenre] = useState('Music Video')
+  const [genre, setGenre] = useState(['Music Video','Narrative','Commercial'])
   
   function FilterGenre(newGenre){
+    if(genre === newGenre){
+      setGenre(['Music Video','Narrative','Commercial'])
+    } else
     setGenre(newGenre)
   }
 
@@ -23,11 +26,12 @@ export default function Reel() {
       <div className='project-wrapper'>
         
         {projectlist.map((project, index) => {
-          if (project.type === genre)
+          if (genre.includes(project.type))
+          
           return (
             <div className='project' key={index}>
               {/* <img src={project.image[0]} alt={project.name} /> */}
-                <div className='project-info'>
+              <div className='project-info'>
                 <div className='project-title'>{project.name}</div>
                 <div className='project-type'>{project.type}</div>
                 <div className='project-director'>{project.director}</div>
