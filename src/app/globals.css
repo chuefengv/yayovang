@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
 html,
 body,
 div,
@@ -76,85 +75,76 @@ a {
 
 /* Add your custom styles below this line */
 .layout {
-  font-family: "Lato", sans-serif;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  max-width: 1300px;
-  height: 100vh;
-  margin: 0 auto;
+  font-family: "Libre Baskerville", serif;
   color: rgb(255, 243, 243);
   background-color: black;
+  margin: 20px;
 }
 
 .header {
   display: flex;
-  justify-content: center;
+  margin: 20px 0 20px 0;
+}
+.header .logo-wrapper {
+  width: 50px;
+}
+.header .logo-wrapper img {
+  width: 100%;
 }
 .header .header-wrapper {
-  display: grid;
-  justify-items: center;
-  text-align: center;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 30px 0 20px 0;
-}
-.header .header-wrapper h1 {
-  font-size: 2.5rem;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-.header .header-wrapper h3 {
+  align-self: center;
+  margin-left: 20px;
   font-size: 1.5em;
-  margin: 10px 0 10px 0;
 }
 
 .reel {
   display: grid;
-  justify-content: center;
-  align-content: center;
-  height: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
 }
-.reel .reel-wrapper {
-  aspect-ratio: 16/9;
-  width: 80vw;
-  max-width: 900px;
-  background-color: black;
-  -o-object-fit: fill;
-     object-fit: fill;
+.reel .project-wrapper {
+  display: grid;
+  justify-items: center;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.reel .project-wrapper .image-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.reel .project-wrapper .image-wrapper .image-title {
+  position: absolute;
+  display: grid;
+  align-content: center;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  height: 100%;
+  z-index: 1;
+}
+.reel .project-wrapper .image-wrapper .image-title h4 {
+  color: white;
+}
+.reel .project-wrapper .image-wrapper:hover .image-title {
+  z-index: 1;
+}
+.reel .project-wrapper .image-wrapper:hover img {
+  opacity: 0.65;
 }
 
 .footer {
-  display: grid;
-  justify-items: center;
+  margin: 60px 0 40px 0;
   text-align: center;
-  padding: 30px 0 30px 0;
 }
-.footer .under-construciton {
-  font-size: 2em;
-  font-style: italic;
-  margin: 20px 0 20px 0;
-  width: 90%;
-}
-.footer .under-construciton p {
-  text-decoration: underline;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 0 auto;
-}
-.footer .footer-text {
-  font-size: 1.5em;
+.footer .footer-icon {
+  font-size: 2.5em;
   margin: 20px 0 20px 0;
 }
-.footer .footer-icons .icons {
-  font-size: 2em;
-  margin: 0 10px 0 10px;
-}
-
-@media only screen and (max-width: 800px) {
-  .footer .under-construciton {
-    font-size: 1.5em;
-  }
-  .footer .footer-text {
-    font-size: 1em;
-  }
+.footer .footer-icon a {
+  margin: 10px;
 }/*# sourceMappingURL=globals.css.map */

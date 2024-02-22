@@ -1,24 +1,39 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import "../../app/globals.css"
-import dynamic from "next/dynamic";
-const ReactPlayer = dynamic(() => import('react-player/lazy'), { ssr: false });
+import { projectlist } from '@/app/projectlist';
+import "../../../node_modules/react-modal-video/scss/modal-video.scss"
+import ModalVideo from 'react-modal-video'
 
 export default function Reel() {
-  const URL = 'https://player.vimeo.com/video/836371548?h=551c266867';
+
+  const [isOpen, setOpen] = useState(false)
+  const [videoId,setVideoId] = useState(" ")
+
+  const getVideo = (videoid) =>{
+    setVideoId(videoid)
+    if(videoid){
+      setOpen(true)
+    }
+  }
 
   return (
     <div className='reel'>
-      <div className='reel-wrapper'>
-        <ReactPlayer
-          className='react-player'
-          width='100%'
-          height='100%'
-          controls={true}
-          url={URL}
-          light={'https://yayovangprojects.s3.amazonaws.com/img/thumb-reel.jpeg'}
-        />
-      </div>
+        <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId={videoId} onClose={()=>setOpen(false)} />
+
+        {projectlist.map((project, index) => {
+          return (
+            <div className='project-wrapper' key={index} onClick={()=>(project.video?getVideo(project.video):null)}>
+                <div className='image-wrapper'>
+                  <img src={project.image[2]} alt={project.name} />
+                  <div className="image-title">
+                      <h4>{project.name}</h4>
+                  </div>
+                </div>
+            </div>
+          )
+        })}
+
     </div>
   );
 }
