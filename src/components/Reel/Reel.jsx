@@ -2,45 +2,37 @@
 import React, { useState } from 'react'
 import "../../app/globals.css"
 import { projectlist } from '@/app/projectlist';
+import "../../../node_modules/react-modal-video/scss/modal-video.scss"
+import ModalVideo from 'react-modal-video'
 
 export default function Reel() {
 
-  const [genre, setGenre] = useState(['Music Video','Narrative','Commercial'])
-  
-  function FilterGenre(newGenre){
-    if(genre === newGenre){
-      setGenre(['Music Video','Narrative','Commercial'])
-    } else
-    setGenre(newGenre)
+  const [isOpen, setOpen] = useState(false)
+  const [videoId,setVideoId] = useState(" ")
+
+  const getVideo = (videoid) =>{
+    setVideoId(videoid)
+    if(videoid){
+      setOpen(true)
+    }
   }
 
   return (
     <div className='reel'>
+        <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId={videoId} onClose={()=>setOpen(false)} />
 
-      <div className='genre-tabs'>
-        <div onClick={()=>FilterGenre("Narrative")}>Narrative</div>
-        <div onClick={()=>FilterGenre("Music Video")}>Music Video</div>
-        <div>Commercial</div>
-      </div>
-      
-      <div className='project-wrapper'>
-        
         {projectlist.map((project, index) => {
-          if (genre.includes(project.type))
-          
           return (
-            <div className='project' key={index}>
-              {/* <img src={project.image[0]} alt={project.name} /> */}
-              <div className='project-info'>
-                <div className='project-title'>{project.name}</div>
-                <div className='project-type'>{project.type}</div>
-                <div className='project-director'>{project.director}</div>
-              </div>
+            <div className='project-wrapper' key={index} onClick={()=>(project.video?getVideo(project.video):null)}>
+                <div className='image-wrapper'>
+                  <img src={project.image[2]} alt={project.name} />
+                  <div className="image-title">
+                      <h4>{project.name}</h4>
+                  </div>
+                </div>
             </div>
           )
         })}
-
-      </div>
 
     </div>
   );
