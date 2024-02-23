@@ -1,5 +1,5 @@
 export const projectlist = [
-    {id:1, name:"Stacey",type:"Narrative",director:"Arabella Sharkey", producer:"Patrice Yip", video:"", image:[
+    {id:1, name:"Mirror Stacy",type:"Narrative",director:"Arabella Sharkey", producer:"Patrice Yip", video:"", image:[
         "https://yayovangprojects.s3.amazonaws.com/img1.1.jpg",
         "https://yayovangprojects.s3.amazonaws.com/img1.2.jpg",
         "https://yayovangprojects.s3.amazonaws.com/img1.3.jpg",
@@ -20,7 +20,7 @@ export const projectlist = [
         "https://yayovangprojects.s3.amazonaws.com/img3.5.jpg",
         "https://yayovangprojects.s3.amazonaws.com/img3.6.jpg",
     ]},
-    {id:4, name:"Stil Life",type:"Narrative",director:"Sarah Kim", producer:"Annie Huang, Emma Sheldrick", video:"", image:[
+    {id:4, name:"Still Life",type:"Narrative",director:"Sarah Kim", producer:"Annie Huang, Emma Sheldrick", video:"", image:[
         "https://yayovangprojects.s3.amazonaws.com/img4.1.jpg",
         "https://yayovangprojects.s3.amazonaws.com/img4.2.jpg",
         "https://yayovangprojects.s3.amazonaws.com/img4.3.jpg",
