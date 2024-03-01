@@ -25,7 +25,7 @@ export default function Reel() {
           return (
             <div className='project-wrapper' key={index} onClick={()=>(project.video?getVideo(project.video):null)}>
                 <div className='image-wrapper'>
-                  <img src={project.image[2]} alt={project.name} loading='lazy'/>
+                  <img src={project.image[0]} alt={project.name} loading='lazy'/>
                   <div className="image-title">
                       <h4>{project.name}</h4>
                   </div>
