@@ -78,7 +78,7 @@ a {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   color: rgb(255, 243, 243);
-  background-color: black;
+  background-color: #121212;
   margin: 20px;
 }
 
@@ -97,7 +97,7 @@ a {
   width: fit-content;
   align-self: center;
   margin-left: 20px;
-  font-size: 1.5em;
+  font-size: 2.5em;
 }
 
 .reel {
@@ -109,7 +109,6 @@ a {
   display: grid;
   justify-items: center;
   position: relative;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 .reel .project-wrapper .image-wrapper img {
   width: 100%;
@@ -127,6 +126,7 @@ a {
   text-align: center;
   height: 100%;
   z-index: 1;
+  font-size: 1.35em;
 }
 .reel .project-wrapper .image-wrapper .image-title h4 {
   color: white;
@@ -143,10 +143,19 @@ a {
   margin: 60px 0 40px 0;
   text-align: center;
 }
+.footer .footer-text {
+  font-size: 1.5em;
+}
 .footer .footer-icon {
   font-size: 2.5em;
-  margin: 20px 0 20px 0;
+  margin: 0 0 20px 0;
 }
 .footer .footer-icon a {
   margin: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .header .header-wrapper {
+    font-size: 1.5em;
+  }
 }/*# sourceMappingURL=globals.css.map */
