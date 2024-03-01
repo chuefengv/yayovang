@@ -129,6 +129,7 @@ a {
 }
 .reel .project-wrapper .image-wrapper .image-title h4 {
   color: white;
+  text-shadow: 0.5px 0.5px 0.5px black;
 }
 .reel .project-wrapper .image-wrapper:hover .image-title {
   z-index: 1;
