@@ -96,9 +96,11 @@ a {
   height: 100%;
   width: 100%;
 }
+.header a {
+  align-self: center;
+}
 .header .header-wrapper {
   display: flex;
-  align-self: center;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -127,7 +129,7 @@ a {
 }
 .info .info-text-wrapper {
   width: 20%;
-  padding: 20px;
+  padding: 0 20px 0 20px;
 }
 .info .info-text-wrapper h4 {
   font-size: 2em;

@@ -18,7 +18,7 @@ export default function Info(props) {
                 {props.projectsInfo.artist?<p>Artist: {props.projectsInfo.artist}</p>:null}
             </div>
             <div className='info-director'>
-                <p>Director: {props.projectsInfo.director}</p>
+                {props.projectsInfo.director?<p>Director: {props.projectsInfo.director}</p>:null}
             </div>
 
         </div>
