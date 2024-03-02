@@ -116,7 +116,12 @@ a{
     }
 }
 
-.reel{
+.info{
+    border: solid yellow 1px;
+    margin: 20px;
+}
+
+.project{
     // border: solid blue 1px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
