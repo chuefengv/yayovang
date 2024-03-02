@@ -1,18 +1,18 @@
 export const projectlist = [
-    {id:1, name:"MIRROR STACY",type:"Narrative",director:"Arabella Sharkey", producer:"Patrice Yip", video:"", image:[
+    {id:1, name:"MIRROR STACY",type:"Narrative",artist:"",director:"Arabella Sharkey", producer:"Patrice Yip", video:"", image:[
         "https://yayovangprojects.s3.amazonaws.com/images/img1_1.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img1_2.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img1_3.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img1_4.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img1_5.webp",
     ]},
-    {id:2, name:"PLANT BABY",type:"Narrative",director:"Arabella Sharkey", producer:"Patrice Yip", video:"", image:[
+    {id:2, name:"PLANT BABY",type:"Narrative",artist:"",director:"Arabella Sharkey", producer:"Patrice Yip", video:"", image:[
         "https://yayovangprojects.s3.amazonaws.com/images/img2_1.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img2_2.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img2_3.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img2_4.webp",
     ]},
-    {id:3, name:"THE INFINITE LIVES OF LARRY SHERMAN",type:"Narrative",director:"Dov Torbin", producer:"Ophir Ariel", video:"", image:[
+    {id:3, name:"THE INFINITE LIVES OF LARRY SHERMAN",type:"Narrative",artist:"",director:"Dov Torbin", producer:"Ophir Ariel", video:"", image:[
         "https://yayovangprojects.s3.amazonaws.com/images/img3_1.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img3_2.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img3_3.webp",
@@ -20,7 +20,7 @@ export const projectlist = [
         "https://yayovangprojects.s3.amazonaws.com/images/img3_5.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img3_6.webp",
     ]},
-    {id:4, name:"STILL LIFE",type:"Narrative",director:"Sarah Kim", producer:"Annie Huang, Emma Sheldrick", video:"", image:[
+    {id:4, name:"STILL LIFE",type:"Narrative",artist:"",director:"Sarah Kim", producer:"Annie Huang, Emma Sheldrick", video:"", image:[
         "https://yayovangprojects.s3.amazonaws.com/images/img4_1.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img4_2.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img4_3.webp",
@@ -28,56 +28,56 @@ export const projectlist = [
         "https://yayovangprojects.s3.amazonaws.com/images/img4_5.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img4_6.webp",
     ]},
-    {id:5, name:"SECRETS, SWIPES, AND LIES",type:"Narrative",director:"Dezera Page", producer:"", video:"", image:[
+    {id:5, name:"SECRETS, SWIPES, AND LIES",type:"Narrative",artist:"",director:"Dezera Page", producer:"", video:"", image:[
         "https://yayovangprojects.s3.amazonaws.com/images/img5_1.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img5_2.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img5_3.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img5_4.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img5_5.webp",
     ]},
-    {id:6, name:"JOHN SPLITHOFF - WAY BACK",type:"Music Video",director:"Tim Westover", producer:"", video:"", image:[
+    {id:6, name:"WAY BACK",type:"Music Video",artist:"John Splithoff",director:"Tim Westover", producer:"", video:"", image:[
         "https://yayovangprojects.s3.amazonaws.com/images/img6_1.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img6_2.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img6_3.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img6_4.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img6_5.webp",
     ]},
-    {id:7, name:"CHEMICAL SUNRISE - IMPERFECTIONISM",type:"Music Video",director:"Gianna Llewllyn", producer:"Sohailla Mahjour", video:"DanjS5LoQHE?si=jqsAs_OUhkXg9c0i", image:[
+    {id:7, name:"IMPERFECTIONISM",type:"Music Video",artist:"Chemical Sunrise",director:"Gianna Llewllyn", producer:"Sohailla Mahjour", video:"DanjS5LoQHE?si=jqsAs_OUhkXg9c0i", image:[
         "https://yayovangprojects.s3.amazonaws.com/images/img7_1.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img7_2.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img7_3.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img7_4.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img7_5.webp",
     ]},
-    {id:8, name:"JUSTIN STARLING - SURIVE",type:"Music Video",director:"Tim Westover", producer:"", video:"Mw4bgFyAsc0?si=UA6r7Al33zSP2s1S", image:[
+    {id:8, name:"SURIVE",type:"Music Video",artist:"Justin Starling",director:"Tim Westover", producer:"", video:"Mw4bgFyAsc0?si=UA6r7Al33zSP2s1S", image:[
         "https://yayovangprojects.s3.amazonaws.com/images/img8_1.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img8_2.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img8_3.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img8_4.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img8_5.webp",
     ]},
-    {id:9, name:"DARCI FT. NESSLY - GOT U ON",type:"Music Video",director:"Tim Westover", producer:"", video:"TEW3GedJ02o?si=shWczUxNPv4tQbhC", image:[
+    {id:9, name:"GOT U ON",type:"Music Video",artist:"Darci Ft. Nessly",director:"Tim Westover", producer:"", video:"TEW3GedJ02o?si=shWczUxNPv4tQbhC", image:[
         "https://yayovangprojects.s3.amazonaws.com/images/img9_1.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img9_2.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img9_3.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img9_4.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img9_5.webp",
     ]},
-    {id:10, name:"JUSTIN STARLING - WAY IT GOES",type:"Music Video",director:"Tim Westover", producer:"", video:"mqdereEGEX8?si=YDiLfIKuOWZGQ8ro", image:[
+    {id:10, name:"WAY IT GOES",type:"Music Video",artist:"Justin Starling",director:"Tim Westover", producer:"", video:"mqdereEGEX8?si=YDiLfIKuOWZGQ8ro", image:[
         "https://yayovangprojects.s3.amazonaws.com/images/img10_1.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img10_2.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img10_3.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img10_4.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img10_5.webp",
     ]},
-    {id:11, name:"TREVOR DANIELS - FORGOT",type:"Music Video",director:"Tim Westover", producer:"", video:"", image:[
+    {id:11, name:"FORGOT",type:"Music Video",artist:"Trevor Daniels",director:"Tim Westover", producer:"", video:"", image:[
         "https://yayovangprojects.s3.amazonaws.com/images/img11_1.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img11_2.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img11_3.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img11_4.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img11_5.webp",
     ]},
-    {id:12, name:"DARCI - LIFE",type:"Music Video",director:"Tim Westover", producer:"", video:"nTnXG6Za-V0?si=AQCpunvZG4_6_S0V", image:[
+    {id:12, name:"LIFE",type:"Music Video",artist:"Darci",director:"Tim Westover", producer:"", video:"nTnXG6Za-V0?si=AQCpunvZG4_6_S0V", image:[
         "https://yayovangprojects.s3.amazonaws.com/images/img12_1.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img12_2.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img12_3.webp",

@@ -113,8 +113,30 @@ a {
 }
 
 .info {
-  border: solid yellow 1px;
   margin: 20px;
+  display: flex;
+}
+.info .info-image-wrapper {
+  width: 80%;
+}
+.info .info-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.info .info-text-wrapper {
+  width: 20%;
+  padding: 20px;
+}
+.info .info-text-wrapper h4 {
+  font-size: 2em;
+}
+.info .info-text-wrapper p {
+  font-size: 1.25em;
+}
+.info .info-text-wrapper .info-type {
+  font-style: italic;
 }
 
 .project {

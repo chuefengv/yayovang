@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Info projectsInfo={projectsInfo} />
-      <Project setProjectsInfo={setProjectsInfo}/>
+      <Project setProjectsInfo={setProjectsInfo} />
     </>
   )
 }
