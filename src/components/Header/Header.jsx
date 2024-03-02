@@ -7,7 +7,8 @@ export default function Header() {
         <img src='../icon.ico' alt='logo for yayo vang'/>
       </div>
       <div className='header-wrapper'>
-        <h1>YAYO VANG | DIRECTOR OF PHOTOGRAPHY</h1>
+        <h1>YAYO VANG</h1>
+        <h2>DIRECTOR OF PHOTOGRAPHY</h2>
       </div>
     </div>
   )
