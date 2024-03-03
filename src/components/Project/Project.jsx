@@ -11,11 +11,14 @@ export default function Project(props) {
   const [videoId,setVideoId] = useState(" ")
 
   const getProject = (project) =>{
+
     props.setProjectsInfo(project)
+    props.setIsExpanded(true)
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
     });
+
   }
 
   return (

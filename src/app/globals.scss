@@ -146,6 +146,12 @@ a{
             font-style: italic;
         }
     }
+    .info-exit{
+        border: solid red 1px;
+        height: fit-content;
+        font-size: 2em;
+        cursor: pointer;
+    }
 }
 
 .project{
@@ -159,6 +165,8 @@ a{
         display: grid;
         justify-items: center;
         position: relative;
+        cursor: pointer;
+
         .image-wrapper{
             img{    
                 width: 100%;
