@@ -232,4 +232,13 @@ a {
     border: none;
     margin: 0 0 0 10px;
   }
+  .info {
+    flex-wrap: wrap;
+  }
+  .info .info-image-wrapper {
+    width: 100%;
+  }
+  .info .info-text-wrapper {
+    width: 100%;
+  }
 }/*# sourceMappingURL=globals.css.map */

@@ -245,4 +245,14 @@ a{
             }
         }
     }
+
+    .info{
+        flex-wrap: wrap;
+        .info-image-wrapper{
+            width: 100%;
+        }
+        .info-text-wrapper{
+            width: 100%;
+        }
+    }
 }
