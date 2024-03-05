@@ -24,21 +24,16 @@ export default function Project(props) {
 
   return (
     <div className='project'>
-        <div className='project-outside'>
           {projectlist.map((project, index) => {
             return (
-              <div className='project-wrapper' key={index} onClick={()=>getProject(project)}>
-                  <div className='image-wrapper'>
+              <div className='image-wrapper' key={index} onClick={()=>getProject(project)}>
                     <img src={project.image[0]} alt={project.name} loading='lazy'/>
                     <div className="image-title">
                         <h4>{project.name}</h4>
                     </div>
-                  </div>
               </div>
             )
           })}
-        </div>
-
     </div>
   );
 }
