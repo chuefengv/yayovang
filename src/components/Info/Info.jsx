@@ -28,7 +28,7 @@ export default function Info(props) {
                     navigation={true}
                     modules={[ Navigation]}
                     className="mySwiper2"
-                    onSlideChange={(swiper) => {SetPlayVideo(false)}}
+                    // onSlideChange={(swiper) => }}
                 >
                     
                     {props.projectsInfo.video?
@@ -39,7 +39,7 @@ export default function Info(props) {
                                 controls={true}
                                 width='100%'
                                 height='100%'
-                                playing={playVideo}
+                                // playing={(swiper) => {newVideo(swiper)}}
                             />
                         </div>
                     </SwiperSlide>:null}
