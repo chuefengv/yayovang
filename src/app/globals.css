@@ -96,9 +96,11 @@ a {
   height: 100%;
   width: 100%;
 }
+.header a {
+  align-self: center;
+}
 .header .header-wrapper {
   display: flex;
-  align-self: center;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -112,24 +114,59 @@ a {
   padding: 0 0 0 20px;
 }
 
-.reel {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 20px;
+.info {
   margin: 20px;
+  display: flex;
 }
-.reel .project-wrapper {
-  display: grid;
-  justify-items: center;
-  position: relative;
+.info .info-image-wrapper {
+  width: 80%;
 }
-.reel .project-wrapper .image-wrapper img {
+.info .info-image-wrapper img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.reel .project-wrapper .image-wrapper .image-title {
+.info .info-text-wrapper {
+  width: 20%;
+  padding: 0 20px 0 20px;
+}
+.info .info-text-wrapper h4 {
+  font-size: 2em;
+}
+.info .info-text-wrapper p {
+  font-size: 1.25em;
+}
+.info .info-text-wrapper .info-type {
+  font-style: italic;
+}
+.info .info-exit {
+  border: solid red 1px;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.project-outside {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  margin: 20px;
+}
+.project-outside .project-wrapper {
+  display: grid;
+  justify-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.project-outside .project-wrapper .image-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.project-outside .project-wrapper .image-wrapper .image-title {
   position: absolute;
   display: grid;
   align-content: center;
@@ -141,14 +178,14 @@ a {
   z-index: 1;
   font-size: 1.35em;
 }
-.reel .project-wrapper .image-wrapper .image-title h4 {
+.project-outside .project-wrapper .image-wrapper .image-title h4 {
   color: white;
   text-shadow: 0.5px 0.5px 0.5px black;
 }
-.reel .project-wrapper .image-wrapper:hover .image-title {
+.project-outside .project-wrapper .image-wrapper:hover .image-title {
   z-index: 1;
 }
-.reel .project-wrapper .image-wrapper:hover img {
+.project-outside .project-wrapper .image-wrapper:hover img {
   opacity: 0.65;
 }
 
@@ -165,6 +202,24 @@ a {
 }
 .footer .footer-icon a {
   margin: 10px;
+}
+
+.swiper {
+  height: 100%;
+}
+
+.swiper-slide {
+  height: 100%;
+}
+.swiper-slide .info-video-wrapper {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.swiper-slide .info-video-wrapper iframe {
+  width: 100%;
+  height: 100%;
 }
 
 @media only screen and (max-width: 800px) {
