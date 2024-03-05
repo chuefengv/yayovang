@@ -13,7 +13,6 @@ import ReactPlayer from 'react-player';
 
 
 export default function Info(props) {
-    const URL = 'https://youtu.be/KwokIKGTqxA?si=pLe1CIPIQbHmXux7'
 
     const [number, setNumber] = useState(0)
 
@@ -34,7 +33,13 @@ export default function Info(props) {
                     {props.projectsInfo.video?
                     <SwiperSlide> 
                         <div className='info-video-wrapper'>
-                            <iframe className='info-video' width="560" height="315" src="https://www.youtube.com/embed/KwokIKGTqxA?si=-PHPIGyZKGclZS9k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <ReactPlayer 
+                                url={props.projectsInfo.video}
+                                controls={true}
+                                width='100%'
+                                height='100%'
+                                playing={!number}
+                            />
                         </div>
                     </SwiperSlide>:null}
 

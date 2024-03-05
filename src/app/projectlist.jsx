@@ -42,28 +42,28 @@ export const projectlist = [
         "https://yayovangprojects.s3.amazonaws.com/images/img6_4.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img6_5.webp",
     ]},
-    {id:7, name:"IMPERFECTIONISM",type:"Music Video",artist:"Chemical Sunrise",director:"Gianna Llewllyn", producer:"Sohailla Mahjour", video:"DanjS5LoQHE?si=jqsAs_OUhkXg9c0i", image:[
+    {id:7, name:"IMPERFECTIONISM",type:"Music Video",artist:"Chemical Sunrise",director:"Gianna Llewllyn", producer:"Sohailla Mahjour", video:"https://www.youtube.com/embed/DanjS5LoQHE?si=cOjjLyvpkmntQeCw", image:[
         "https://yayovangprojects.s3.amazonaws.com/images/img7_1.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img7_2.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img7_3.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img7_4.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img7_5.webp",
     ]},
-    {id:8, name:"SURIVE",type:"Music Video",artist:"Justin Starling",director:"Tim Westover", producer:"", video:"Mw4bgFyAsc0?si=UA6r7Al33zSP2s1S", image:[
+    {id:8, name:"SURIVE",type:"Music Video",artist:"Justin Starling",director:"Tim Westover", producer:"", video:"https://www.youtube.com/embed/Mw4bgFyAsc0?si=sOyxGgTmFuX-MJKF", image:[
         "https://yayovangprojects.s3.amazonaws.com/images/img8_1.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img8_2.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img8_3.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img8_4.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img8_5.webp",
     ]},
-    {id:9, name:"GOT U ON",type:"Music Video",artist:"Darci Ft. Nessly",director:"Tim Westover", producer:"", video:"TEW3GedJ02o?si=shWczUxNPv4tQbhC", image:[
+    {id:9, name:"GOT U ON",type:"Music Video",artist:"Darci Ft. Nessly",director:"Tim Westover", producer:"", video:"https://www.youtube.com/embed/TEW3GedJ02o?si=5LVoZWJEa79QzVnr", image:[
         "https://yayovangprojects.s3.amazonaws.com/images/img9_1.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img9_2.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img9_3.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img9_4.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img9_5.webp",
     ]},
-    {id:10, name:"WAY IT GOES",type:"Music Video",artist:"Justin Starling",director:"Tim Westover", producer:"", video:"mqdereEGEX8?si=YDiLfIKuOWZGQ8ro", image:[
+    {id:10, name:"WAY IT GOES",type:"Music Video",artist:"Justin Starling",director:"Tim Westover", producer:"", video:"https://www.youtube.com/embed/mqdereEGEX8?si=HtQvxWfCYocjh1NI", image:[
         "https://yayovangprojects.s3.amazonaws.com/images/img10_1.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img10_2.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img10_3.webp",
@@ -77,7 +77,7 @@ export const projectlist = [
         "https://yayovangprojects.s3.amazonaws.com/images/img11_4.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img11_5.webp",
     ]},
-    {id:12, name:"LIFE",type:"Music Video",artist:"Darci",director:"Tim Westover", producer:"", video:"nTnXG6Za-V0?si=AQCpunvZG4_6_S0V", image:[
+    {id:12, name:"LIFE",type:"Music Video",artist:"Darci",director:"Tim Westover", producer:"", video:"https://www.youtube.com/embed/nTnXG6Za-V0?si=kvH9g_cHCXKi0bIx", image:[
         "https://yayovangprojects.s3.amazonaws.com/images/img12_1.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img12_2.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img12_3.webp",
