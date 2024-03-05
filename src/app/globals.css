@@ -204,6 +204,24 @@ a {
   margin: 10px;
 }
 
+.swiper {
+  height: 100%;
+}
+
+.swiper-slide {
+  height: 100%;
+}
+.swiper-slide .info-video-wrapper {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.swiper-slide .info-video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+}
+
 @media only screen and (max-width: 800px) {
   .header .header-wrapper {
     font-size: 0.45em;

@@ -4,16 +4,15 @@ import "../../app/globals.css"
 import { projectlist } from '@/app/projectlist';
 import "../../../node_modules/react-modal-video/scss/modal-video.scss"
 import ModalVideo from 'react-modal-video'
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 export default function Project(props) {
 
   const [isOpen, setOpen] = useState(false)
   const [videoId,setVideoId] = useState(" ")
 
-  const getProject = (project) =>{
-
+  const getProject = (project, swiper) =>{
     props.setProjectsInfo(project)
-    props.setIsExpanded(true)
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
