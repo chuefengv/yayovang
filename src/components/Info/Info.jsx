@@ -12,9 +12,10 @@ import {Navigation} from 'swiper/modules';
 import ReactPlayer from 'react-player';
 
 
+
 export default function Info(props) {
 
-    const [number, setNumber] = useState(0)
+    const [playVideo, SetPlayVideo] = useState(true)
 
     return (
     <div className='info'>
@@ -27,7 +28,7 @@ export default function Info(props) {
                     navigation={true}
                     modules={[ Navigation]}
                     className="mySwiper2"
-                    onSlideChange={(swiper) => {setNumber(swiper.activeIndex)}}
+                    onSlideChange={(swiper) => {SetPlayVideo(false)}}
                 >
                     
                     {props.projectsInfo.video?
@@ -38,7 +39,7 @@ export default function Info(props) {
                                 controls={true}
                                 width='100%'
                                 height='100%'
-                                playing={!number}
+                                playing={playVideo}
                             />
                         </div>
                     </SwiperSlide>:null}
@@ -56,9 +57,7 @@ export default function Info(props) {
         </div>
         <div className='info-text-wrapper'>
             <div className='info-name'>
-                <h4>{props.projectsInfo.name}</h4>
-                {number}
-                
+                <h4>{props.projectsInfo.name}</h4>                
             </div>
             <div className='info-type'>
                 <p>{props.projectsInfo.type}</p>

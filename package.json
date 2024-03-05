@@ -20,6 +20,7 @@
     "swiper": "^11.0.7"
   },
   "devDependencies": {
-    "@iconify/react": "^4.1.1"
+    "@iconify/react": "^4.1.1",
+    "video.js": "^8.10.0"
   }
 }
