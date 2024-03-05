@@ -26,7 +26,6 @@ export const projectlist = [
         "https://yayovangprojects.s3.amazonaws.com/images/img4_3.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img4_4.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img4_5.webp",
-        "https://yayovangprojects.s3.amazonaws.com/images/img4_6.webp",
     ]},
     {id:5, name:"SECRETS, SWIPES, AND LIES",type:"Narrative",artist:"",director:"Dezera Page", producer:"", video:"", image:[
         "https://yayovangprojects.s3.amazonaws.com/images/img5_1.webp",
@@ -84,4 +83,5 @@ export const projectlist = [
         "https://yayovangprojects.s3.amazonaws.com/images/img12_4.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img12_5.webp",
     ]},
+    {id:13, name:"",type:"",artist:"",director:"", producer:"", video:"", image:[]}
 ]

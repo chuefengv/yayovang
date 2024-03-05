@@ -148,25 +148,25 @@ a {
   cursor: pointer;
 }
 
-.project {
+.project-outside {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 20px;
   margin: 20px;
 }
-.project .project-wrapper {
+.project-outside .project-wrapper {
   display: grid;
   justify-items: center;
   position: relative;
   cursor: pointer;
 }
-.project .project-wrapper .image-wrapper img {
+.project-outside .project-wrapper .image-wrapper img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.project .project-wrapper .image-wrapper .image-title {
+.project-outside .project-wrapper .image-wrapper .image-title {
   position: absolute;
   display: grid;
   align-content: center;
@@ -178,14 +178,14 @@ a {
   z-index: 1;
   font-size: 1.35em;
 }
-.project .project-wrapper .image-wrapper .image-title h4 {
+.project-outside .project-wrapper .image-wrapper .image-title h4 {
   color: white;
   text-shadow: 0.5px 0.5px 0.5px black;
 }
-.project .project-wrapper .image-wrapper:hover .image-title {
+.project-outside .project-wrapper .image-wrapper:hover .image-title {
   z-index: 1;
 }
-.project .project-wrapper .image-wrapper:hover img {
+.project-outside .project-wrapper .image-wrapper:hover img {
   opacity: 0.65;
 }
 
