@@ -60,12 +60,14 @@ export default function Info(props) {
                 <div className='info-type'>
                     <p>{props.projectsInfo.type}</p>
                 </div>
-                <div className='info-producer'>
-                    {props.projectsInfo.producer?<p>Producer: {props.projectsInfo.producer}</p>:null}
+                <div className='info-artist'>
                     {props.projectsInfo.artist?<p>Artist: {props.projectsInfo.artist}</p>:null}
                 </div>
                 <div className='info-director'>
                     {props.projectsInfo.director?<p>Director: {props.projectsInfo.director}</p>:null}
+                </div>
+                <div className='info-producer'>
+                    {props.projectsInfo.producer?<p>Producer: {props.projectsInfo.producer}</p>:null}
                 </div>
             </div>
         </div>

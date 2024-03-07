@@ -79,7 +79,6 @@ a {
   font-weight: 400;
   color: rgb(255, 243, 243);
   background-color: #121212;
-  width: 100vw;
   max-width: 1300px;
   margin: 0 auto;
 }
@@ -131,6 +130,7 @@ a {
 .info .info-text-wrapper {
   width: 20%;
   padding: 0 20px 0 20px;
+  display: inline;
 }
 .info .info-text-wrapper h4 {
   font-size: 2em;
@@ -149,25 +149,30 @@ a {
   cursor: pointer;
 }
 
-.project {
+.project .project-type-section {
+  margin: 0 20px 0 20px;
+  font-size: 2em;
+  font-weight: 700;
+}
+.project .project-layout {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 20px;
   margin: 20px;
 }
-.project .image-wrapper {
+.project .project-layout .image-wrapper {
   display: grid;
   position: relative;
   justify-items: center;
   cursor: pointer;
 }
-.project .image-wrapper img {
+.project .project-layout .image-wrapper img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.project .image-wrapper .image-title {
+.project .project-layout .image-wrapper .image-title {
   position: absolute;
   display: grid;
   align-content: center;
@@ -177,14 +182,14 @@ a {
   font-size: 1.35em;
   text-align: center;
 }
-.project .image-wrapper .image-title h4 {
+.project .project-layout .image-wrapper .image-title h4 {
   color: white;
   text-shadow: 0.5px 0.5px 0.5px black;
 }
-.project .image-wrapper:hover .image-title {
+.project .project-layout .image-wrapper:hover .image-title {
   z-index: 1;
 }
-.project .image-wrapper:hover img {
+.project .project-layout .image-wrapper:hover img {
   opacity: 0.65;
 }
 

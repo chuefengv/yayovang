@@ -24,16 +24,35 @@ export default function Project(props) {
 
   return (
     <div className='project'>
+      <div className='project-type-section'>Narratives</div>
+
+      <div className='project-layout'>
           {projectlist.map((project, index) => {
             return (
-              <div className='image-wrapper' key={index} onClick={()=>getProject(project)}>
+              project.type==="Narrative"?<div className='image-wrapper' key={index} onClick={()=>getProject(project)}>
                     <img src={project.image[0]} alt={project.name} loading='lazy'/>
                     <div className="image-title">
                         <h4>{project.name}</h4>
                     </div>
-              </div>
+              </div>:null
             )
           })}
+      </div>
+
+      <div className='project-type-section'>Music Videos</div>
+
+        <div className='project-layout'>
+          {projectlist.map((project, index) => {
+            return (
+              project.type==="Music Video"?<div className='image-wrapper' key={index} onClick={()=>getProject(project)}>
+                    <img src={project.image[0]} alt={project.name} loading='lazy'/>
+                    <div className="image-title">
+                        <h4>{project.name}</h4>
+                    </div>
+              </div>:null
+            )
+          })}
+      </div>
     </div>
   );
 }
