@@ -166,6 +166,7 @@ a {
   justify-items: center;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 200px;
   cursor: pointer;
 }
 .project .project-layout .image-wrapper img {
