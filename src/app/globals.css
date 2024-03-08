@@ -164,6 +164,8 @@ a {
   display: grid;
   position: relative;
   justify-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   cursor: pointer;
 }
 .project .project-layout .image-wrapper img {
@@ -190,7 +192,7 @@ a {
   z-index: 1;
 }
 .project .project-layout .image-wrapper:hover img {
-  opacity: 0.65;
+  opacity: 0.75;
 }
 
 .footer {

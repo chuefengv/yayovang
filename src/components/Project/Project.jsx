@@ -29,11 +29,12 @@ export default function Project(props) {
       <div className='project-layout'>
           {projectlist.map((project, index) => {
             return (
-              project.type==="Narrative"?<div className='image-wrapper' key={index} onClick={()=>getProject(project)}>
-                    <img src={project.image[0]} alt={project.name} loading='lazy'/>
-                    <div className="image-title">
-                        <h4>{project.name}</h4>
-                    </div>
+              project.type==="Narrative"?
+              <div className='image-wrapper' key={index} onClick={()=>getProject(project)} style={{ backgroundImage: `url(${project.smallImage})` }}>
+                <img src={project.image[0]} alt={project.name} loading='lazy' />
+                <div className="image-title">
+                    <h4>{project.name}</h4>
+                </div>
               </div>:null
             )
           })}
@@ -44,11 +45,12 @@ export default function Project(props) {
         <div className='project-layout'>
           {projectlist.map((project, index) => {
             return (
-              project.type==="Music Video"?<div className='image-wrapper' key={index} onClick={()=>getProject(project)}>
-                    <img src={project.image[0]} alt={project.name} loading='lazy'/>
-                    <div className="image-title">
-                        <h4>{project.name}</h4>
-                    </div>
+              project.type==="Music Video"?
+              <div className='image-wrapper' key={index} onClick={()=>getProject(project)} style={{ backgroundImage: `url(${project.smallImage})` }}>
+                <img src={project.image[0]} alt={project.name} loading='lazy'/>
+                <div className="image-title">
+                    <h4>{project.name}</h4>
+                </div>
               </div>:null
             )
           })}

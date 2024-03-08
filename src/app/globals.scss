@@ -164,11 +164,14 @@ a{
             display: grid;
             position: relative;
             justify-items: center;
+            background-repeat: no-repeat;
+            background-size: cover;
             cursor: pointer;
                 img{    
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
+                    // opacity: 0;
                 }
                 .image-title{
                     position: absolute;
@@ -190,7 +193,7 @@ a{
             z-index: 1;
             }
             img{
-            opacity: .65;
+            opacity: .75;
             }
         }
     }
