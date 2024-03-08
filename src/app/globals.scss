@@ -160,6 +160,7 @@ a{
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         gap: 20px;
         margin: 20px;
+
         .image-wrapper{
             display: grid;
             position: relative;
@@ -188,6 +189,7 @@ a{
                     }
                 }
         }
+
         .image-wrapper:hover{
             .image-title{
             z-index: 1;
