@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React,{useState} from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -8,18 +8,25 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 import {Navigation} from 'swiper/modules';
-import ReactPlayer from 'react-player';
-
 import ModalVideo from 'react-modal-video';
 
 export default function Info(props) {
 
-    // const [isOpen, setOpen] = useState(false)
-    // const [videoId,setVideoId] = useState(" ")
+    const [isOpen, setOpen] = useState(false)
+    const [videoId,setVideoId] = useState(" ")
+
+    const getVideo = (videoid) =>{
+        setVideoId(videoid)
+        if(videoid){
+          setOpen(true)
+        }
+      }
 
     return (
 
         <div className='info'>
+            <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId={videoId} onClose={()=>setOpen(false)} />
+
             <div className='info-image-wrapper'>
                 {props.projectsInfo.image?
                     <Swiper
@@ -35,7 +42,7 @@ export default function Info(props) {
                         {props.projectsInfo.video?
                         <SwiperSlide> 
                             <div className='info-video-wrapper'>
-                                <div className='play-button-overlay' ></div>
+                                <div className='play-button-overlay' onClick={()=>getVideo(props.projectsInfo.video)}></div>
                                 <img src={props.projectsInfo.image[0]}/>
                             </div>
                         </SwiperSlide>:null}
