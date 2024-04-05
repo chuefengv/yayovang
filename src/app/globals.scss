@@ -87,7 +87,10 @@ a{
 .header{
     display: flex;
     margin: 20px;
+    // border: solid green 1px;
+    // background-color: white;
     .logo-wrapper{
+        // border: solid blue 1px;
         width: 75px;
         height: 75px;
         align-self: center;
@@ -101,6 +104,7 @@ a{
 
     }
     .header-wrapper{
+        // border: solid yellow 1px;
         display: flex;
         height: fit-content;
         h1{
@@ -111,6 +115,17 @@ a{
         h2{
             font-size: 2.5em;
             padding: 0 0 0 20px;
+        }
+    }
+    .header-nav{
+        // border: solid red 1px;
+        flex-grow: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        p{
+            margin: 0 10px 0 10px;
+            font-size: 1.25em;
         }
     }
 }
@@ -222,15 +237,43 @@ a{
 }
 
 .swiper-slide{
-   height: 100%;
-    .info-video-wrapper{
-        width: 100%;
-        height: 100%;
-        object-fit: fill;
-        iframe{
-            width: 100%;
-            height: 100%;
+    height: 100%;
+    .info-video-wrapper {
+        position: relative;
+        .play-button-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 60px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            &:before {
+                content: "";
+                width: 0;
+                height: 0;
+                border-top: 12px solid transparent;
+                border-bottom: 12px solid transparent;
+                border-left: 20px solid white;
+            }
         }
+    }
+}
+
+
+
+.demoreel{
+    display: flex;
+    justify-content: center;
+    .video-wrapper{
+        aspect-ratio: 16/9;
+        width: 80vw;
+        max-width: 900px;
     }
 }
 

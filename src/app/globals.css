@@ -113,6 +113,16 @@ a {
   font-size: 2.5em;
   padding: 0 0 0 20px;
 }
+.header .header-nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.header .header-nav p {
+  margin: 0 10px 0 10px;
+  font-size: 1.25em;
+}
 
 .info {
   margin: 20px;
@@ -219,14 +229,39 @@ a {
   height: 100%;
 }
 .swiper-slide .info-video-wrapper {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
+  position: relative;
 }
-.swiper-slide .info-video-wrapper iframe {
-  width: 100%;
-  height: 100%;
+.swiper-slide .info-video-wrapper .play-button-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.swiper-slide .info-video-wrapper .play-button-overlay:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 20px solid white;
+}
+
+.demoreel {
+  display: flex;
+  justify-content: center;
+}
+.demoreel .video-wrapper {
+  aspect-ratio: 16/9;
+  width: 80vw;
+  max-width: 900px;
 }
 
 @media only screen and (max-width: 800px) {

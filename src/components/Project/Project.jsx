@@ -20,7 +20,6 @@ export default function Project(props) {
     const swiper = document.querySelector('.mySwiper2').swiper;
     swiper.slideTo(0);
   }
-  
 
   return (
     <div className='project'>

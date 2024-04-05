@@ -10,8 +10,12 @@ import 'swiper/css/navigation';
 import {Navigation} from 'swiper/modules';
 import ReactPlayer from 'react-player';
 
+import ModalVideo from 'react-modal-video';
+
 export default function Info(props) {
 
+    // const [isOpen, setOpen] = useState(false)
+    // const [videoId,setVideoId] = useState(" ")
 
     return (
 
@@ -31,13 +35,8 @@ export default function Info(props) {
                         {props.projectsInfo.video?
                         <SwiperSlide> 
                             <div className='info-video-wrapper'>
-                                <ReactPlayer 
-                                    url={props.projectsInfo.video}
-                                    controls={true}
-                                    width='100%'
-                                    height='100%'
-                                    // playing={(swiper) => {newVideo(swiper)}}
-                                />
+                                <div className='play-button-overlay' ></div>
+                                <img src={props.projectsInfo.image[0]}/>
                             </div>
                         </SwiperSlide>:null}
 
