@@ -20,7 +20,7 @@ export const projectlist = [
         "https://yayovangprojects.s3.amazonaws.com/images/img3_5.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img3_6.webp",
     ],smallImage:["https://yayovangprojects.s3.amazonaws.com/small/img3_1-small.webp"]},
-    {id:4, name:"STILL LIFE",type:"Narrative",artist:"",director:"Sarah Kim", producer:"Annie Huang, Emma Sheldrick", video:"", image:[
+    {id:4, name:"STILL LIFE",type:"Narrative",artist:"",director:"Sarah Kim", producer:"Annie Huang, Emma Sheldrick", video:"x70B6K7JVjM?si=Yz1fscL8OoJCy_fm", image:[
         "https://yayovangprojects.s3.amazonaws.com/images/img4_1.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img4_2.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img4_3.webp",
