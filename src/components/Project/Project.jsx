@@ -12,13 +12,15 @@ export default function Project(props) {
       top: 0,
       behavior: 'smooth'
     });
-    props.setOpenFlag(true)
     changeSlideToIndex0()
   }
 
   const changeSlideToIndex0 = () => {
-    const swiper = document.querySelector('.mySwiper2').swiper;
-    swiper.slideTo(0);
+    if(document.querySelector('.mySwiper2')!==null){
+      const swiper = document.querySelector('.mySwiper2').swiper;
+      swiper.slideTo(0);
+    }
+
   }
 
   return (

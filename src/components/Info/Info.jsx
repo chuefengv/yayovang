@@ -9,6 +9,8 @@ import 'swiper/css/navigation';
 
 import {Navigation} from 'swiper/modules';
 import ModalVideo from 'react-modal-video';
+import { projectlist } from '@/app/projectlist';
+import { Icon } from '@iconify/react';
 
 export default function Info(props) {
 
@@ -21,6 +23,10 @@ export default function Info(props) {
           setOpen(true)
         }
       }
+
+    const closeWindow = () =>{
+        props.setProjectsInfo(projectlist)
+    }
 
     return (
 
@@ -36,7 +42,6 @@ export default function Info(props) {
                         navigation={true}
                         modules={[ Navigation]}
                         className="mySwiper2"
-                        
                     >
                         
                         {props.projectsInfo.video?
@@ -60,6 +65,10 @@ export default function Info(props) {
             </div>
 
             <div className='info-text-wrapper'>
+                {props.projectsInfo.name?
+                <div className='info-exit'>
+                    <Icon className='icon'icon="material-symbols:close" onClick={()=>{closeWindow()}} />
+                </div>:null}
                 <div className='info-name'>
                     <h4>{props.projectsInfo.name}</h4>                
                 </div>

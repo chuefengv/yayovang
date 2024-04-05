@@ -10,13 +10,12 @@ import { projectlist } from '@/app/projectlist';
 
 export default function Home() {
 
-  const [projectsInfo, setProjectsInfo] = useState(projectlist[12]);
-  const [openFlag, setOpenFlag] = useState(false);
+  const [projectsInfo, setProjectsInfo] = useState(projectlist[projectlist.length - 1]);
 
   return (
     <>
-      <Info projectsInfo={projectsInfo} openFlag={openFlag} />
-      <Project setProjectsInfo={setProjectsInfo} setOpenFlag={setOpenFlag} />
+      <Info projectsInfo={projectsInfo} setProjectsInfo={setProjectsInfo}/>
+      <Project setProjectsInfo={setProjectsInfo} />
     </>
   )
 }
