@@ -65,12 +65,14 @@ export default function Info(props) {
             </div>
 
             <div className='info-text-wrapper'>
-                {props.projectsInfo.name?
-                <div className='info-exit'>
-                    <Icon className='icon'icon="material-symbols:close" onClick={()=>{closeWindow()}} />
-                </div>:null}
-                <div className='info-name'>
-                    <h4>{props.projectsInfo.name}</h4>                
+                <div className='info-name-wrapper'>
+                    <div className='info-name'>
+                            <h4>{props.projectsInfo.name}</h4>                
+                    </div>
+                    {props.projectsInfo.name?
+                    <div className='info-exit'>
+                        <Icon className='icon'icon="material-symbols:close" onClick={()=>{closeWindow()}} />
+                    </div>:null}
                 </div>
                 <div className='info-type'>
                     <p>{props.projectsInfo.type}</p>

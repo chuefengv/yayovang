@@ -14,13 +14,7 @@ export default function Header() {
           <h2>DIRECTOR OF PHOTOGRAPHY</h2>
         </div>
       </a>
-{/* 
-      <div className='header-nav'>
-        <p>Demo Reel</p>
-        /
-        <p>Projects</p>
-      </div> */}
-
+      
     </div>
   )
 }

@@ -8,7 +8,8 @@ export default function Footer() {
   return (
     <div className='footer'>
       <div className='footer-text'>
-        <p>CONTACT ME</p>
+        <h1>CONTACT ME:</h1>
+        <p>YAYO VANG</p>
         <p>NEW YORK, NEW YORK</p>
       </div>
       <div className='footer-icon'>
@@ -19,7 +20,9 @@ export default function Footer() {
           <Icon icon="openmoji:instagram" />
         </a>
       </div>
-
+      <div className='copyright'>
+        <p>© 2021 YAYO VANG</p>
+      </div>
     </div>
   )
 }

@@ -76,9 +76,9 @@ a {
 /* Add your custom styles below this line */
 .layout {
   font-family: "Oswald", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   color: rgb(255, 243, 243);
-  background-color: #121212;
+  background-color: #090909;
   max-width: 1300px;
   margin: 0 auto;
 }
@@ -86,6 +86,7 @@ a {
 .header {
   display: flex;
   margin: 20px;
+  font-weight: 400;
 }
 .header .logo-wrapper {
   width: 75px;
@@ -111,6 +112,7 @@ a {
 }
 .header .header-wrapper h2 {
   font-size: 2.5em;
+  font-weight: 500;
   padding: 0 0 0 20px;
 }
 .header .header-nav {
@@ -124,12 +126,105 @@ a {
   font-size: 1.25em;
 }
 
+.demoreel {
+  display: grid;
+  margin: 0 20px 20px 20px;
+}
+.demoreel h1 {
+  font-size: 2.25em;
+  font-weight: 400;
+  margin: 20px 0 20px 0;
+}
+.demoreel .demo-video-wrapper {
+  aspect-ratio: 16/9;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 2px;
+}
+
+.nav-button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2.25em;
+  font-weight: 400;
+  margin: 80px 0 0 0;
+}
+.nav-button-wrapper .nav-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.homepage {
+  display: grid;
+  justify-items: center;
+  margin: 0 20px 0 20px;
+}
+.homepage .video-wrapper {
+  position: relative;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 0px 2px;
+}
+.homepage .video-wrapper .demo-reel-text {
+  border-bottom: solid white 1.5px;
+  line-height: 1.5em;
+  position: absolute;
+  z-index: 1;
+  font-size: 2.25em;
+  text-shadow: 0.5px 0.5px 0.5px black;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.homepage .video-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.homepage .project-nav-wrapper {
+  display: grid;
+  gap: 20px;
+  margin: 20px 0 20px 0;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+.homepage .project-nav-wrapper .project-nav-option {
+  position: relative;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 0px 2px;
+}
+.homepage .project-nav-wrapper .project-nav-option img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.homepage .project-nav-wrapper .project-nav-option .project-nav-option-text {
+  position: absolute;
+  z-index: 1;
+  font-size: 1.5em;
+  text-shadow: 0.5px 0.5px 0.5px black;
+}
+.homepage .project-nav-wrapper .project-nav-option .project-nav-option-text h4 {
+  color: white;
+  text-shadow: 0.5px 0.5px 0.5px black;
+}
+.homepage .project-nav-wrapper .project-nav-option #narrative {
+  bottom: 15%;
+  left: 15%;
+}
+.homepage .project-nav-wrapper .project-nav-option #music-video {
+  bottom: 15%;
+  right: 15%;
+}
+
 .info {
   margin: 20px;
   display: flex;
+  flex-wrap: wrap;
 }
 .info .info-image-wrapper {
-  width: 80%;
+  width: 100%;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 2px;
 }
 .info .info-image-wrapper img {
   width: 100%;
@@ -138,18 +233,25 @@ a {
      object-fit: cover;
 }
 .info .info-text-wrapper {
-  width: 20%;
-  padding: 0 20px 0 20px;
+  width: 100%;
+  padding: 0 0 20px 0;
   display: inline;
+  border-bottom: solid #ffffff 1px;
 }
 .info .info-text-wrapper h4 {
   font-size: 2em;
+  font-weight: 400;
 }
 .info .info-text-wrapper p {
-  font-size: 1.25em;
+  font-size: 1em;
+}
+.info .info-text-wrapper .info-name-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 .info .info-text-wrapper .info-type {
   font-style: italic;
+  margin: 5px 0 5px 0;
 }
 .info .info-exit {
   font-size: 2.25em;
@@ -161,16 +263,18 @@ a {
   cursor: pointer;
 }
 
+.project {
+  margin: 20px;
+}
 .project .project-type-section {
-  margin: 0 20px 0 20px;
-  font-size: 2em;
-  font-weight: 700;
+  font-size: 2.25em;
+  font-weight: 400;
+  margin: 20px 0 20px 0;
 }
 .project .project-layout {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 20px;
-  margin: 20px;
 }
 .project .project-layout .image-wrapper {
   display: grid;
@@ -179,6 +283,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 200px;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 2px;
   cursor: pointer;
 }
 .project .project-layout .image-wrapper img {
@@ -209,18 +314,27 @@ a {
 }
 
 .footer {
-  margin: 60px 20px 40px 20px;
   text-align: center;
+  border-top: solid 1px rgb(238, 238, 238);
+  padding: 30px 0 0 0;
+  margin: 0 20px 0 20px;
 }
-.footer .footer-text {
+.footer .footer-text h1 {
   font-size: 1.5em;
+}
+.footer .footer-text p {
+  font-size: 1.15em;
 }
 .footer .footer-icon {
   font-size: 2.5em;
-  margin: 0 0 20px 0;
+  margin: 0 0 0 0;
 }
 .footer .footer-icon a {
   margin: 10px;
+}
+.footer .copyright {
+  margin: 10px 0 10px 0;
+  font-size: 0.75em;
 }
 
 .swiper {
@@ -256,16 +370,14 @@ a {
   border-left: 20px solid white;
 }
 
-.demoreel {
-  display: flex;
-  justify-content: center;
+@media only screen and (min-width: 800px) {
+  .project-nav-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+  .project-nav-wrapper .project-nav-option {
+    height: 100%;
+  }
 }
-.demoreel .video-wrapper {
-  aspect-ratio: 16/9;
-  width: 80vw;
-  max-width: 900px;
-}
-
 @media only screen and (max-width: 800px) {
   .header .header-wrapper {
     font-size: 0.45em;
@@ -276,13 +388,23 @@ a {
     border: none;
     margin: 0 0 0 10px;
   }
-  .info {
-    flex-wrap: wrap;
+  .nav-button-wrapper {
+    font-size: 1.15em;
   }
-  .info .info-image-wrapper {
-    width: 100%;
+  .homepage .project-nav-wrapper .project-nav-option #narrative {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 45%;
   }
-  .info .info-text-wrapper {
-    width: 100%;
+  .homepage .project-nav-wrapper .project-nav-option #music-video {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 45%;
   }
 }/*# sourceMappingURL=globals.css.map */
