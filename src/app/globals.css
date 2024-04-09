@@ -68,6 +68,10 @@ td {
   vertical-align: baseline;
 }
 
+body {
+  background-color: #090909;
+}
+
 a {
   text-decoration: none;
   color: inherit;
