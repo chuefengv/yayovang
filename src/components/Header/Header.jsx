@@ -6,7 +6,7 @@ export default function Header() {
 
       <a href='/'>
         <div className='logo-wrapper'>
-          <img src='../icon.ico' alt='logo for yayo vang'/>
+          <img src='../icon.ico' alt='logo for yayo vang' loading='lazy'/>
         </div>  
       </a>
 

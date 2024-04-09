@@ -138,6 +138,7 @@ a {
 .demoreel .demo-video-wrapper {
   aspect-ratio: 16/9;
   box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 2px;
+  animation: fade-in 3s;
 }
 
 .nav-button-wrapper {
@@ -174,6 +175,7 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
+  animation: fade-in 2s;
 }
 .homepage .video-wrapper img {
   width: 100%;
@@ -203,18 +205,23 @@ a {
   z-index: 1;
   font-size: 1.5em;
   text-shadow: 0.5px 0.5px 0.5px black;
+  animation: fade-in 4.5s;
+  transition: transform 0.3s ease;
 }
 .homepage .project-nav-wrapper .project-nav-option .project-nav-option-text h4 {
   color: white;
   text-shadow: 0.5px 0.5px 0.5px black;
 }
 .homepage .project-nav-wrapper .project-nav-option #narrative {
-  bottom: 15%;
+  bottom: 25%;
   left: 15%;
 }
 .homepage .project-nav-wrapper .project-nav-option #music-video {
-  bottom: 15%;
+  bottom: 25%;
   right: 15%;
+}
+.homepage .project-nav-wrapper .project-nav-option:hover .project-nav-option-text {
+  transform: translateY(-10px);
 }
 
 .info {
@@ -284,6 +291,9 @@ a {
   background-size: cover;
   min-height: 200px;
   box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 2px;
+  animation: fade-in 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
   cursor: pointer;
 }
 .project .project-layout .image-wrapper img {
@@ -306,11 +316,26 @@ a {
   color: white;
   text-shadow: 0.5px 0.5px 0.5px black;
 }
-.project .project-layout .image-wrapper:hover .image-title {
-  z-index: 1;
+.project .project-layout .image-wrapper:nth-child(1) {
+  animation-delay: 0.1s;
 }
-.project .project-layout .image-wrapper:hover img {
-  opacity: 0.75;
+.project .project-layout .image-wrapper:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.project .project-layout .image-wrapper:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.project .project-layout .image-wrapper:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.project .project-layout .image-wrapper:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.project .project-layout .image-wrapper:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.project .project-layout .image-wrapper:nth-child(7) {
+  animation-delay: 0.7s;
 }
 
 .footer {
@@ -370,6 +395,14 @@ a {
   border-left: 20px solid white;
 }
 
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
 @media only screen and (min-width: 800px) {
   .project-nav-wrapper {
     grid-template-columns: 1fr 1fr;

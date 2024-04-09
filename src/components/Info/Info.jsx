@@ -26,13 +26,14 @@ export default function Info(props) {
 
     const closeWindow = () =>{
         props.setProjectsInfo(projectlist)
+        setOpen(false)
     }
 
     return (
 
         <div className='info'>
             <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId={videoId} onClose={()=>setOpen(false)} />
-
+            
             <div className='info-image-wrapper'>
                 {props.projectsInfo.image?
                     <Swiper

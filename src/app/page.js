@@ -17,14 +17,14 @@ export default function Home() {
                 <h1>DEMO REEL</h1>
               </div>
           </Link>
-          <img src='https://yayovangprojects.s3.amazonaws.com/images/img4_5.webp'/>
+          <img src='https://yayovangprojects.s3.amazonaws.com/images/img4_5.webp' loading='lazy'/>
         </div>
 
 
         <div className='project-nav-wrapper'>
           <Link href='/narrative'>
             <div className='project-nav-option'>
-              <img src='https://yayovangprojects.s3.amazonaws.com/images/img5_4.webp'/>
+              <img src='https://yayovangprojects.s3.amazonaws.com/images/img5_4.webp' loading='lazy'/>
               <div className='project-nav-option-text' id='narrative'>
                 <h1>NARRATIVE VIDEOS</h1>
               </div>
@@ -32,7 +32,7 @@ export default function Home() {
           </Link>
           <Link href='/music-video'>
             <div className='project-nav-option'>
-                <img src='https://yayovangprojects.s3.amazonaws.com/images/img9_1.webp'/>
+                <img src='https://yayovangprojects.s3.amazonaws.com/images/img9_4.webp' loading='lazy'/>
                 <div className='project-nav-option-text' id='music-video'>
                   <h1>MUSIC VIDEOS</h1>
                 </div>
