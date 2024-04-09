@@ -158,6 +158,9 @@ a {
   align-items: center;
   cursor: pointer;
 }
+.nav-button-wrapper .nav-button:hover {
+  text-decoration: underline;
+}
 
 .homepage {
   display: grid;
@@ -273,6 +276,9 @@ a {
 .info .info-exit .icon {
   cursor: pointer;
 }
+.info .info-exit .icon:hover {
+  transform: scale(1.1);
+}
 
 .project {
   margin: 20px;
@@ -305,6 +311,7 @@ a {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: opacity 0.1s ease;
 }
 .project .project-layout .image-wrapper .image-title {
   position: absolute;
@@ -319,6 +326,9 @@ a {
 .project .project-layout .image-wrapper .image-title h4 {
   color: white;
   text-shadow: 0.5px 0.5px 0.5px black;
+}
+.project .project-layout .image-wrapper:hover img {
+  opacity: 0.75;
 }
 .project .project-layout .image-wrapper:nth-child(1) {
   animation-delay: 0.1s;
