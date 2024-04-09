@@ -29,12 +29,12 @@ export default function demoreel() {
         <Link href='/music-video'>
           <div className='nav-button'>
             <Icon className='icon' icon="la:angle-left" />
-            <p>MUSIC VIDEOS</p>
+            <p>MUSIC VIDEO</p>
           </div>
         </Link>
         <Link href='/narrative'>
           <div className='nav-button'>
-            <p>NARRATIVE VIDEOS</p>
+            <p>NARRATIVE</p>
             <Icon className='icon' icon="la:angle-right" />
           </div>
         </Link>

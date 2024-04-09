@@ -14,7 +14,7 @@ export default function Home() {
         <div className='video-wrapper'>
           <Link href='/demoreel'>
               <div className='demo-reel-text'>
-                <h1>DEMO REEL</h1>
+                <h1>REEL</h1>
               </div>
           </Link>
           <img src='https://yayovangprojects.s3.amazonaws.com/images/img4_5.webp' loading='lazy'/>

@@ -50,12 +50,12 @@ export default function Project(props) {
           <Link href='/demoreel'>
             <div className='nav-button'>
               <Icon className='icon' icon="la:angle-left" />
-              <p>DEMOREEL</p>
+              <p>REEL</p>
             </div>
           </Link>
           <Link href={props.projectType === 'MUSIC VIDEO'?'/narrative':'/music-video'}>
             <div className='nav-button'>
-              {props.projectType === 'MUSIC VIDEO' ? <p>NARRATIVE VIDEOS</p> : <p>MUSIC VIDEOS</p>}
+              {props.projectType === 'MUSIC VIDEO' ? <p>NARRATIVE</p> : <p>MUSIC VIDEO</p>}
               <Icon className='icon' icon="la:angle-right" />
             </div>
           </Link>
