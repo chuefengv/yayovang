@@ -20,7 +20,7 @@ export const projectlist = [
         "https://yayovangprojects.s3.amazonaws.com/images/img3_5.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img3_6.webp",
     ],smallImage:["https://yayovangprojects.s3.amazonaws.com/small/img3_1-small.webp"]},
-    {id:4, name:"STILL LIFE",type:"NARRATIVE",artist:"",director:"Sarah Kim", producer:"Annie Huang, Emma Sheldrick", video:"x70B6K7JVjM?si=Yz1fscL8OoJCy_fm", image:[
+    {id:4, name:"STILL LIFE",type:"NARRATIVE",artist:"",director:"Sarah Kim", producer:"Annie Huang, Emma Sheldrick", video:"Y4GkMuLcQyY?si=dSQT6slxPke_3ljh", image:[
         "https://yayovangprojects.s3.amazonaws.com/images/img4_1.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img4_2.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img4_3.webp",
@@ -55,7 +55,7 @@ export const projectlist = [
         "https://yayovangprojects.s3.amazonaws.com/images/img8_4.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img8_5.webp",
     ],smallImage:["https://yayovangprojects.s3.amazonaws.com/small/img8_1-small.webp"]},
-    {id:9, name:"GOT U ON",type:"MUSIC VIDEO",artist:"Darci Ft. Nessly",director:"Tim Westover", producer:"", video:"TEW3GedJ02o?si=5LVoZWJEa79QzVnr", image:[
+    {id:9, name:"GOT U ON",type:"MUSIC VIDEO",artist:"Darci Ft. Nessly",director:"Tim Westover", producer:"", video:"xykGWu1rbqw?si=VaND0Vp__iPG-wOO", image:[
         "https://yayovangprojects.s3.amazonaws.com/images/img9_1.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img9_2.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img9_3.webp",

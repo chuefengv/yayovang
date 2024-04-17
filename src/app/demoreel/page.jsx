@@ -7,7 +7,7 @@ import { Icon } from '@iconify/react';
 const ReactPlayer = dynamic(() => import("react-player/lazy"), { ssr: false });
 
 export default function demoreel() {
-    const URL = "https://vimeo.com/836371548"
+    const URL = "https://www.youtube.com/watch?v=KrEekJPrAds&ab_channel=YayoDP"
 
   return (
     <div className='demoreel'>
@@ -21,7 +21,7 @@ export default function demoreel() {
           controls={true}
           width='100%'
           height='100%'
-          light={true}
+          // light={true}
         />
       </div>
 
