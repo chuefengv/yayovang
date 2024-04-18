@@ -2,6 +2,7 @@
 
 import React,{useState} from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Thumbnail from '@/components/Thumbnail/thumbnail';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -28,7 +29,6 @@ export default function Info(props) {
         props.setProjectsInfo(projectlist)
         setOpen(false)
     }
-
     return (
 
         <div className='info'>
@@ -49,7 +49,10 @@ export default function Info(props) {
                         <SwiperSlide> 
                             <div className='info-video-wrapper'>
                                 <div className='play-button-overlay' onClick={()=>getVideo(props.projectsInfo.video)}></div>
-                                <img src={props.projectsInfo.image[0]}/>
+                                {/* <img src={props.projectsInfo.image[0]}/> */}
+                                <Thumbnail projectsInfo={props.projectsInfo}>
+                                    
+                                </Thumbnail>
                             </div>
                         </SwiperSlide>:null}
 
