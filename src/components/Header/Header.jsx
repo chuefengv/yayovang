@@ -5,13 +5,13 @@ export default function Header() {
     <div className='header'>
 
       <a href='/'>
-        <div className='logo-wrapper'>
+        <div className='header-logo-wrapper'>
           <img src='../icon.ico' alt='logo for yayo vang' loading='lazy'/>
         </div>  
       </a>
 
       <a href='/'>
-        <div className='header-wrapper'>
+        <div className='header-title'>
           <h1>YAYO VANG</h1>
           <h2>DIRECTOR OF PHOTOGRAPHY</h2>
         </div>

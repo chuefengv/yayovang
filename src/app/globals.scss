@@ -71,7 +71,6 @@ td {
 body{
     background-color: #090909;
 }
-
 a{
     text-decoration: none;
     color: inherit;
@@ -92,7 +91,7 @@ a{
     margin: 20px;
     font-weight: 400;
 
-    .logo-wrapper{
+    .header-logo-wrapper{
         width: 75px;
         height: 75px;
         align-self: center;
@@ -105,7 +104,7 @@ a{
         align-self: center;
 
     }
-    .header-wrapper{
+    .header-title{
         display: flex;
         height: fit-content;
         h1{
@@ -119,16 +118,6 @@ a{
             padding: 0 0 0 20px;
         }
     }
-    .header-nav{
-        flex-grow: 1;
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-        p{
-            margin: 0 10px 0 10px;
-            font-size: 1.25em;
-        }
-    }
 }
 
 .demoreel{
@@ -139,7 +128,7 @@ a{
         font-weight: 400;
         margin: 20px 0 20px 0;
     }
-    .demo-video-wrapper{
+    .demoreel-video-wrapper{
         aspect-ratio: 16/9;
         width: 100%;
         box-shadow: rgba(255, 255, 255, 0.2)0px 0px 2px;
@@ -169,10 +158,10 @@ a{
     display: grid;
     justify-items: center;
     margin: 0 20px 0 20px;
-    .video-wrapper{
+    .homepage-reel-wrapper{
         position: relative;
         box-shadow: rgba(255, 255, 255, 0.25)0px 0px 2px;
-        .demo-reel-text{
+        .homepage-reel-text{
             border-bottom: solid white 1.5px;
             line-height: 1.5em;
             position: absolute;
@@ -191,13 +180,13 @@ a{
             object-fit: cover;
         }
     }
-    .project-nav-wrapper{
+    .homepage-project-nav-wrapper{
         display: grid;
         gap: 20px;
         margin: 20px 0 20px 0;
         font-size: .9em;
         cursor: pointer;
-        .project-nav-option{
+        .homepage-project-nav-option{
             position: relative;
             box-shadow: rgba(255, 255, 255, 0.25)0px 0px 2px;
             img{
@@ -205,7 +194,7 @@ a{
                 height: 100%;
                 object-fit: cover;
             }
-            .project-nav-option-text{
+            .homepage-project-nav-text{
                 position: absolute;
                 z-index: 1;
                 font-size: 1.5em;
@@ -228,8 +217,10 @@ a{
                 right: 15%;
             }
         }
-        .project-nav-option:hover .project-nav-option-text{
-            transform: translateY(-10px);
+        .homepage-project-nav-option:hover{
+            .homepage-project-nav-text{
+                transform: translateY(-10px);
+            }
         }
     }
 }
@@ -274,7 +265,7 @@ a{
     .info-exit{
         font-size: 2.25em;
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         margin: 10px 0 10px 0;
         .icon{
             cursor: pointer;
@@ -297,7 +288,7 @@ a{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         gap: 20px;
-        .image-wrapper{
+        .project-image-wrapper{
             display: grid;
             position: relative;
             justify-items: center;
@@ -316,7 +307,7 @@ a{
                     transition: opacity 0.1s ease;
 
                 }
-                .image-title{
+                .project-image-title{
                     position: absolute;
                     display: grid;
                     align-content: center;
@@ -331,16 +322,16 @@ a{
                     }
                 }
         }
-        .image-wrapper:hover img{
+        .project-image-wrapper:hover img{
             opacity: .75;
         }
-        .image-wrapper:nth-child(1) { animation-delay: .1s; }
-        .image-wrapper:nth-child(2) { animation-delay: .2s; }
-        .image-wrapper:nth-child(3) { animation-delay: .3s; }
-        .image-wrapper:nth-child(4) { animation-delay: .4s; }
-        .image-wrapper:nth-child(5) { animation-delay: .5s; }
-        .image-wrapper:nth-child(6) { animation-delay: .6s; }
-        .image-wrapper:nth-child(7) { animation-delay: .7s; }
+
+        // Animation Delay, for each project in the wrapper, delay the animation by 0.1s
+        @for $i from 1 through 7 {
+            .project-image-wrapper:nth-child(#{$i}) { 
+                animation-delay: 0.#{$i}s;
+            }
+        }
     }
 }
 
@@ -364,7 +355,7 @@ a{
             margin: 10px;
         }
     }
-    .copyright{
+    .footer-copyright{
         margin: 10px 0 10px 0;
         font-size: .75em;
     }
@@ -414,9 +405,9 @@ a{
 
 
 @media only screen and (min-width: 800px) {
-    .project-nav-wrapper{
+    .homepage-project-nav-wrapper{
         grid-template-columns: 1fr 1fr;
-        .project-nav-option{
+        .homepage-project-nav-option{
             height: 100%;
         }
     }
@@ -440,8 +431,8 @@ a{
     }
 
     .homepage{
-        .project-nav-wrapper{
-            .project-nav-option{
+        .homepage-project-nav-wrapper{
+            .homepage-project-nav-option{
                 #narrative{
                     margin-left: auto;
                     margin-right: auto;

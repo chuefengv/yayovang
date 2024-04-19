@@ -11,10 +11,8 @@ export default function demoreel() {
 
   return (
     <div className='demoreel'>
-      
       <h1>REEL</h1>
-
-      <div className='demo-video-wrapper'>
+      <div className='demoreel-video-wrapper'>
         <ReactPlayer
           url={URL}
           playing={false}
