@@ -230,15 +230,52 @@ a {
   justify-content: center;
 }
 .info .info-image-wrapper {
-  width: 100%;
-  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 2px;
   max-width: 1000px;
+  display: flex;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 2px;
 }
-.info .info-image-wrapper img {
+.info .info-image-wrapper .info-photo-wrapper {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-content: center;
+}
+.info .info-image-wrapper .info-photo-wrapper img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+.info .info-image-wrapper .info-video-wrapper {
+  width: 100%;
+}
+.info .info-image-wrapper .info-video-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+.info .info-image-wrapper .info-video-wrapper .play-button-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.info .info-image-wrapper .info-video-wrapper .play-button-overlay:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 20px solid white;
 }
 .info .info-text-wrapper {
   width: 100%;
@@ -369,39 +406,6 @@ a {
 .footer .footer-copyright {
   margin: 10px 0 10px 0;
   font-size: 0.75em;
-}
-
-.swiper {
-  height: 100%;
-}
-
-.swiper-slide {
-  height: 100%;
-}
-.swiper-slide .info-video-wrapper {
-  position: relative;
-}
-.swiper-slide .info-video-wrapper .play-button-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 60px;
-  height: 60px;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-.swiper-slide .info-video-wrapper .play-button-overlay:before {
-  content: "";
-  width: 0;
-  height: 0;
-  border-top: 12px solid transparent;
-  border-bottom: 12px solid transparent;
-  border-left: 20px solid white;
 }
 
 @keyframes fade-in {

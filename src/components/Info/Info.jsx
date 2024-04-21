@@ -40,31 +40,30 @@ export default function Info(props) {
             <div className='info-image-wrapper'>
                 {/* Check if the project has an image, if it does, display the image in a Swiper component. */}
                 {props.projectsInfo.image?
-                    <Swiper
-                        style={{
-                            '--swiper-navigation-color': '#fff',
-                        }}
-                        navigation={true}
-                        modules={[ Navigation]}
-                        className="mySwiper2"
-                    >
+                    <Swiper style={{'--swiper-navigation-color': '#fff',}} navigation={true} modules={[ Navigation]} className="mySwiper2">
+                        
+                        {/* VIDEO */}
                         {/* Check if the project has a video, if it does, display the video in the Swiper component. */}
                         {props.projectsInfo.video?
                         <SwiperSlide> 
                             <div className='info-video-wrapper'>
                                 <div className='play-button-overlay' onClick={()=>getVideo(props.projectsInfo.video)}></div>
-                                <Thumbnail projectsInfo={props.projectsInfo} />
+                                <Thumbnail className='info-video-thumbnail' projectsInfo={props.projectsInfo} />
                             </div>
                         </SwiperSlide>:null}
 
+                        {/* PHOTOS */}
                         {/* Map through the project images and display them in the Swiper component. */}
                         {props.projectsInfo.image.map((image, index) => {
                             return (
                                 <SwiperSlide key={index}>
-                                    <img src={image} alt={props.projectsInfo.name} loading='lazy'/>
+                                    <div className='info-photo-wrapper'>
+                                        <img src={image} alt={props.projectsInfo.name} loading='lazy'/>
+                                    </div>
                                 </SwiperSlide>
                             )
                         })}           
+
                     </Swiper>
                 :null}
             </div>
