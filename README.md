@@ -17,6 +17,11 @@ The site will be available at `http://localhost:3000`.
 
 To view the live version of this site, visit `https://www.yayovang.com`.
 
+## Tools
+
+Images compressed via `https://www.Compressimage.io`.
+Images hosted on AWS S3 Buckets.
+
 ## Contributing
 
 This is a personal project and contributions are not currently being accepted. However, feel free to fork the repository and use the code as a starting point for your own portfolio.

@@ -19,7 +19,7 @@ export default function demoreel() {
           controls={true}
           width='100%'
           height='100%'
-          // light={true}
+          light='https://yayovangprojects.s3.amazonaws.com/images/reel_thumbnail.webp'
         />
       </div>
 
