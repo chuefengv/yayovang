@@ -34,7 +34,7 @@ export const projectlist = [
         "https://yayovangprojects.s3.amazonaws.com/images/img5_4.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img5_5.webp",
     ],smallImage:["https://yayovangprojects.s3.amazonaws.com/small/img5_1-small.webp"]},
-    {id:6, name:"WAY BACK",type:"MUSIC VIDEO",artist:"John Splithoff",director:"Tim Westover", producer:"", video:"", image:[
+    {id:6, name:"WAY BACK",type:"MUSIC VIDEO",artist:"John Splithoff",director:"Tim Westover", producer:"", video:"h5YN_GYqrhc", image:[
         "https://yayovangprojects.s3.amazonaws.com/images/img6_1.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img6_2.webp",
         "https://yayovangprojects.s3.amazonaws.com/images/img6_3.webp",
